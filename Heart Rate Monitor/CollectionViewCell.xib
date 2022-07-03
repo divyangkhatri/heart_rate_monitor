@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Heart_Rate_Monitor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="73" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M00-IU-ayY">
+                        <rect key="frame" x="0.0" y="19" width="73" height="120"/>
+                        <color key="backgroundColor" name="ChartColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="GUx-Ai-cvA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAH-GM-VzW">
+                        <rect key="frame" x="24.5" y="0.0" width="24" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="c15-7s-sVS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJ2-SM-da1">
+                        <rect key="frame" x="22.5" y="147" width="28.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Sha-LF-7Mt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bAH-GM-VzW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6hW-g4-yeh"/>
+                <constraint firstItem="sJ2-SM-da1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7c4-j4-Oxw"/>
+                <constraint firstItem="M00-IU-ayY" firstAttribute="top" secondItem="bAH-GM-VzW" secondAttribute="bottom" constant="4" id="Cl9-0J-NbB"/>
+                <constraint firstAttribute="bottom" secondItem="sJ2-SM-da1" secondAttribute="bottom" constant="8" id="She-Gd-55D"/>
+                <constraint firstItem="sJ2-SM-da1" firstAttribute="top" secondItem="M00-IU-ayY" secondAttribute="bottom" constant="8" id="XVH-S1-I0Z"/>
+                <constraint firstItem="M00-IU-ayY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dgz-fr-HZx"/>
+                <constraint firstAttribute="trailing" secondItem="M00-IU-ayY" secondAttribute="trailing" id="oDw-VQ-HTb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="73" height="169"/>
+            <connections>
+                <outlet property="bmpLabel" destination="bAH-GM-VzW" id="IgH-Cf-SI7"/>
+                <outlet property="dateLabel" destination="sJ2-SM-da1" id="kDw-Xi-cc4"/>
+                <outlet property="view" destination="M00-IU-ayY" id="ffG-Vd-BzW"/>
+                <outlet property="viewHieght" destination="GUx-Ai-cvA" id="UPk-Yu-t8c"/>
+            </connections>
+            <point key="canvasLocation" x="-28.260869565217394" y="92.745535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ChartColor">
+            <color red="0.30196078431372547" green="0.61568627450980395" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Heart_Rate_Monitor_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Current Rate" textAlignment="center" id="ZRx-8Q-2RB">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="136" height="92" alignment="left" image="AnimateHeart0" id="vpO-dd-aNP"/>
+                        <label width="136" height="26" alignment="left" text="Counting.." textAlignment="left" id="g3t-Wg-YjJ">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="heartRateLabel" destination="g3t-Wg-YjJ" id="T0f-hP-nZN"/>
+                        <outlet property="imageView" destination="vpO-dd-aNP" id="1Ws-Zp-h9I"/>
+                        <segue destination="gme-Cf-vl9" kind="relationship" relationship="nextPage" id="KcK-KP-7Qf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="175" y="343"/>
+        </scene>
+        <!--Average Walking Rate-->
+        <scene sceneID="jsT-0n-zxg">
+            <objects>
+                <controller id="gme-Cf-vl9" customClass="AverageWalkingRate" customModule="Heart_Rate_Monitor_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Avg Walking :" id="Dsz-Gh-EqU">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label height="27" alignment="left" text="N/A" id="Vf4-bF-ARj">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <label alignment="left" text="Avg Resting :" id="9cz-7G-Ngs">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label alignment="left" text="N/A" id="DwX-6e-8rk">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="restinglabel" destination="DwX-6e-8rk" id="o9P-nM-8ME"/>
+                        <outlet property="walkinglabel" destination="Vf4-bF-ARj" id="HaE-Rs-NKl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="403" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="115" y="1073"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Heart_Rate_Monitor_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="1048"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Heart_Rate_Monitor_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="1052"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnimateHeart0" width="576" height="424"/>
+    </resources>
+</document>

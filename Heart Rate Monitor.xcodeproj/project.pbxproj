@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D21CB5AB247C2DA10085FBE5 /* AverageWalkingRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CB5AA247C2DA10085FBE5 /* AverageWalkingRate.swift */; };
+		D24863522469175500C2D332 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24863512469175500C2D332 /* Interface.storyboard */; };
+		D2771BA7241D42E900677C56 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2771BA6241D42E900677C56 /* HealthKit.framework */; };
+		D2A6D954241D12C200B33708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D953241D12C200B33708 /* AppDelegate.swift */; };
+		D2A6D956241D12C200B33708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D955241D12C200B33708 /* SceneDelegate.swift */; };
+		D2A6D958241D12C200B33708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D957241D12C200B33708 /* ViewController.swift */; };
+		D2A6D95B241D12C200B33708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A6D959241D12C200B33708 /* Main.storyboard */; };
+		D2A6D95D241D12C400B33708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A6D95C241D12C400B33708 /* Assets.xcassets */; };
+		D2A6D960241D12C400B33708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A6D95E241D12C400B33708 /* LaunchScreen.storyboard */; };
+		D2A6D96B241D12C500B33708 /* Heart_Rate_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D96A241D12C500B33708 /* Heart_Rate_MonitorTests.swift */; };
+		D2A6D976241D12C500B33708 /* Heart_Rate_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D975241D12C500B33708 /* Heart_Rate_MonitorUITests.swift */; };
+		D2A6D97B241D12C500B33708 /* Heart Rate Monitor WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2A6D97A241D12C500B33708 /* Heart Rate Monitor WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2A6D98A241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2A6D989241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2A6D98F241D12C500B33708 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D98E241D12C500B33708 /* InterfaceController.swift */; };
+		D2A6D991241D12C500B33708 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D990241D12C500B33708 /* ExtensionDelegate.swift */; };
+		D2A6D993241D12C500B33708 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D992241D12C500B33708 /* NotificationController.swift */; };
+		D2A6D995241D12C600B33708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A6D994241D12C600B33708 /* Assets.xcassets */; };
+		D2A6D9AE241D143500B33708 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A6D9AD241D143500B33708 /* HealthKit.framework */; };
+		D2C79381247C06C00033149D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C79380247C06C00033149D /* Assets.xcassets */; };
+		D2E4C54424822B2A00EF6EC8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C54224822B2A00EF6EC8 /* CollectionViewCell.swift */; };
+		D2E4C54524822B2A00EF6EC8 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E4C54324822B2A00EF6EC8 /* CollectionViewCell.xib */; };
+		D2E4C54724823B7100EF6EC8 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C54624823B7100EF6EC8 /* CommonFunction.swift */; };
+		D2E4C54824823B7100EF6EC8 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C54624823B7100EF6EC8 /* CommonFunction.swift */; };
+		D2E4C54F248271AD00EF6EC8 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C54E248271AD00EF6EC8 /* HeartData.swift */; };
+		D2E4C550248271AD00EF6EC8 /* HeartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C54E248271AD00EF6EC8 /* HeartData.swift */; };
+		D2F3A50C247ECEB300CDADA4 /* HeartKitAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3A50B247ECEB300CDADA4 /* HeartKitAuthorization.swift */; };
+		D2F3A50D247ECEB300CDADA4 /* HeartKitAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3A50B247ECEB300CDADA4 /* HeartKitAuthorization.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2A6D967241D12C500B33708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A6D948241D12C200B33708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6D94F241D12C200B33708;
+			remoteInfo = "Heart Rate Monitor";
+		};
+		D2A6D972241D12C500B33708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A6D948241D12C200B33708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6D94F241D12C200B33708;
+			remoteInfo = "Heart Rate Monitor";
+		};
+		D2A6D97C241D12C500B33708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A6D948241D12C200B33708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6D979241D12C500B33708;
+			remoteInfo = "Heart Rate Monitor WatchKit App";
+		};
+		D2A6D98B241D12C500B33708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2A6D948241D12C200B33708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2A6D988241D12C500B33708;
+			remoteInfo = "Heart Rate Monitor WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2A6D99D241D12C600B33708 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2A6D98A241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D9A1241D12C600B33708 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D2A6D97B241D12C500B33708 /* Heart Rate Monitor WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D21CB5AA247C2DA10085FBE5 /* AverageWalkingRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageWalkingRate.swift; sourceTree = "<group>"; };
+		D24863512469175500C2D332 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		D2771BA5241D42E900677C56 /* Heart Rate Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Rate Monitor.entitlements"; sourceTree = "<group>"; };
+		D2771BA6241D42E900677C56 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D2A6D950241D12C200B33708 /* Heart Rate Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Rate Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6D953241D12C200B33708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2A6D955241D12C200B33708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2A6D957241D12C200B33708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2A6D95A241D12C200B33708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A6D95C241D12C400B33708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A6D95F241D12C400B33708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2A6D961241D12C400B33708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A6D966241D12C500B33708 /* Heart Rate MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Rate MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6D96A241D12C500B33708 /* Heart_Rate_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Rate_MonitorTests.swift; sourceTree = "<group>"; };
+		D2A6D96C241D12C500B33708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A6D971241D12C500B33708 /* Heart Rate MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heart Rate MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6D975241D12C500B33708 /* Heart_Rate_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart_Rate_MonitorUITests.swift; sourceTree = "<group>"; };
+		D2A6D977241D12C500B33708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A6D97A241D12C500B33708 /* Heart Rate Monitor WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Rate Monitor WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6D984241D12C500B33708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A6D989241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Heart Rate Monitor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A6D98E241D12C500B33708 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D2A6D990241D12C500B33708 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D2A6D992241D12C500B33708 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D2A6D994241D12C600B33708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A6D996241D12C600B33708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A6D997241D12C600B33708 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D2A6D9AB241D143500B33708 /* Heart Rate Monitor WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Heart Rate Monitor WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D2A6D9AD241D143500B33708 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2C79380247C06C00033149D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		D2E4C54224822B2A00EF6EC8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D2E4C54324822B2A00EF6EC8 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D2E4C54624823B7100EF6EC8 /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		D2E4C54E248271AD00EF6EC8 /* HeartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartData.swift; sourceTree = "<group>"; };
+		D2F3A50B247ECEB300CDADA4 /* HeartKitAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartKitAuthorization.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A6D94D241D12C200B33708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2771BA7241D42E900677C56 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D963241D12C500B33708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D96E241D12C500B33708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D986241D12C500B33708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D9AE241D143500B33708 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2A6D947241D12C200B33708 = {
+			isa = PBXGroup;
+			children = (
+				D2A6D952241D12C200B33708 /* Heart Rate Monitor */,
+				D2A6D969241D12C500B33708 /* Heart Rate MonitorTests */,
+				D2A6D974241D12C500B33708 /* Heart Rate MonitorUITests */,
+				D2A6D97E241D12C500B33708 /* Heart Rate Monitor WatchKit App */,
+				D2A6D98D241D12C500B33708 /* Heart Rate Monitor WatchKit Extension */,
+				D2A6D951241D12C200B33708 /* Products */,
+				D2A6D9AC241D143500B33708 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A6D951241D12C200B33708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6D950241D12C200B33708 /* Heart Rate Monitor.app */,
+				D2A6D966241D12C500B33708 /* Heart Rate MonitorTests.xctest */,
+				D2A6D971241D12C500B33708 /* Heart Rate MonitorUITests.xctest */,
+				D2A6D97A241D12C500B33708 /* Heart Rate Monitor WatchKit App.app */,
+				D2A6D989241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A6D952241D12C200B33708 /* Heart Rate Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				D2771BA5241D42E900677C56 /* Heart Rate Monitor.entitlements */,
+				D2A6D953241D12C200B33708 /* AppDelegate.swift */,
+				D2A6D955241D12C200B33708 /* SceneDelegate.swift */,
+				D2A6D957241D12C200B33708 /* ViewController.swift */,
+				D2A6D959241D12C200B33708 /* Main.storyboard */,
+				D2A6D95C241D12C400B33708 /* Assets.xcassets */,
+				D2A6D95E241D12C400B33708 /* LaunchScreen.storyboard */,
+				D2A6D961241D12C400B33708 /* Info.plist */,
+				D2E4C54224822B2A00EF6EC8 /* CollectionViewCell.swift */,
+				D2E4C54324822B2A00EF6EC8 /* CollectionViewCell.xib */,
+				D2E4C54624823B7100EF6EC8 /* CommonFunction.swift */,
+				D2E4C54E248271AD00EF6EC8 /* HeartData.swift */,
+			);
+			path = "Heart Rate Monitor";
+			sourceTree = "<group>";
+		};
+		D2A6D969241D12C500B33708 /* Heart Rate MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6D96A241D12C500B33708 /* Heart_Rate_MonitorTests.swift */,
+				D2A6D96C241D12C500B33708 /* Info.plist */,
+			);
+			path = "Heart Rate MonitorTests";
+			sourceTree = "<group>";
+		};
+		D2A6D974241D12C500B33708 /* Heart Rate MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6D975241D12C500B33708 /* Heart_Rate_MonitorUITests.swift */,
+				D2A6D977241D12C500B33708 /* Info.plist */,
+			);
+			path = "Heart Rate MonitorUITests";
+			sourceTree = "<group>";
+		};
+		D2A6D97E241D12C500B33708 /* Heart Rate Monitor WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D2C79380247C06C00033149D /* Assets.xcassets */,
+				D24863512469175500C2D332 /* Interface.storyboard */,
+				D2A6D984241D12C500B33708 /* Info.plist */,
+			);
+			path = "Heart Rate Monitor WatchKit App";
+			sourceTree = "<group>";
+		};
+		D2A6D98D241D12C500B33708 /* Heart Rate Monitor WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6D9AB241D143500B33708 /* Heart Rate Monitor WatchKit Extension.entitlements */,
+				D2A6D98E241D12C500B33708 /* InterfaceController.swift */,
+				D2A6D990241D12C500B33708 /* ExtensionDelegate.swift */,
+				D2A6D992241D12C500B33708 /* NotificationController.swift */,
+				D2A6D994241D12C600B33708 /* Assets.xcassets */,
+				D2A6D996241D12C600B33708 /* Info.plist */,
+				D2A6D997241D12C600B33708 /* PushNotificationPayload.apns */,
+				D21CB5AA247C2DA10085FBE5 /* AverageWalkingRate.swift */,
+				D2F3A50B247ECEB300CDADA4 /* HeartKitAuthorization.swift */,
+			);
+			path = "Heart Rate Monitor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D2A6D9AC241D143500B33708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2771BA6241D42E900677C56 /* HealthKit.framework */,
+				D2A6D9AD241D143500B33708 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A6D94F241D12C200B33708 /* Heart Rate Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6D9A2241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor" */;
+			buildPhases = (
+				D2A6D94C241D12C200B33708 /* Sources */,
+				D2A6D94D241D12C200B33708 /* Frameworks */,
+				D2A6D94E241D12C200B33708 /* Resources */,
+				D2A6D9A1241D12C600B33708 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A6D97D241D12C500B33708 /* PBXTargetDependency */,
+			);
+			name = "Heart Rate Monitor";
+			productName = "Heart Rate Monitor";
+			productReference = D2A6D950241D12C200B33708 /* Heart Rate Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2A6D965241D12C500B33708 /* Heart Rate MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6D9A5241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate MonitorTests" */;
+			buildPhases = (
+				D2A6D962241D12C500B33708 /* Sources */,
+				D2A6D963241D12C500B33708 /* Frameworks */,
+				D2A6D964241D12C500B33708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A6D968241D12C500B33708 /* PBXTargetDependency */,
+			);
+			name = "Heart Rate MonitorTests";
+			productName = "Heart Rate MonitorTests";
+			productReference = D2A6D966241D12C500B33708 /* Heart Rate MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2A6D970241D12C500B33708 /* Heart Rate MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6D9A8241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate MonitorUITests" */;
+			buildPhases = (
+				D2A6D96D241D12C500B33708 /* Sources */,
+				D2A6D96E241D12C500B33708 /* Frameworks */,
+				D2A6D96F241D12C500B33708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A6D973241D12C500B33708 /* PBXTargetDependency */,
+			);
+			name = "Heart Rate MonitorUITests";
+			productName = "Heart Rate MonitorUITests";
+			productReference = D2A6D971241D12C500B33708 /* Heart Rate MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D2A6D979241D12C500B33708 /* Heart Rate Monitor WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6D99E241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor WatchKit App" */;
+			buildPhases = (
+				D2A6D978241D12C500B33708 /* Resources */,
+				D2A6D99D241D12C600B33708 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A6D98C241D12C500B33708 /* PBXTargetDependency */,
+			);
+			name = "Heart Rate Monitor WatchKit App";
+			productName = "Heart Rate Monitor WatchKit App";
+			productReference = D2A6D97A241D12C500B33708 /* Heart Rate Monitor WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D2A6D988241D12C500B33708 /* Heart Rate Monitor WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A6D99A241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor WatchKit Extension" */;
+			buildPhases = (
+				D2A6D985241D12C500B33708 /* Sources */,
+				D2A6D986241D12C500B33708 /* Frameworks */,
+				D2A6D987241D12C500B33708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heart Rate Monitor WatchKit Extension";
+			productName = "Heart Rate Monitor WatchKit Extension";
+			productReference = D2A6D989241D12C500B33708 /* Heart Rate Monitor WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A6D948241D12C200B33708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = LanetTeam;
+				TargetAttributes = {
+					D2A6D94F241D12C200B33708 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D2A6D965241D12C500B33708 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D2A6D94F241D12C200B33708;
+					};
+					D2A6D970241D12C500B33708 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D2A6D94F241D12C200B33708;
+					};
+					D2A6D979241D12C500B33708 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D2A6D988241D12C500B33708 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D2A6D94B241D12C200B33708 /* Build configuration list for PBXProject "Heart Rate Monitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2A6D947241D12C200B33708;
+			productRefGroup = D2A6D951241D12C200B33708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A6D94F241D12C200B33708 /* Heart Rate Monitor */,
+				D2A6D965241D12C500B33708 /* Heart Rate MonitorTests */,
+				D2A6D970241D12C500B33708 /* Heart Rate MonitorUITests */,
+				D2A6D979241D12C500B33708 /* Heart Rate Monitor WatchKit App */,
+				D2A6D988241D12C500B33708 /* Heart Rate Monitor WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A6D94E241D12C200B33708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D960241D12C400B33708 /* LaunchScreen.storyboard in Resources */,
+				D2A6D95D241D12C400B33708 /* Assets.xcassets in Resources */,
+				D2E4C54524822B2A00EF6EC8 /* CollectionViewCell.xib in Resources */,
+				D2A6D95B241D12C200B33708 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D964241D12C500B33708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D96F241D12C500B33708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D978241D12C500B33708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C79381247C06C00033149D /* Assets.xcassets in Resources */,
+				D24863522469175500C2D332 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D987241D12C500B33708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D995241D12C600B33708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A6D94C241D12C200B33708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E4C54424822B2A00EF6EC8 /* CollectionViewCell.swift in Sources */,
+				D2A6D958241D12C200B33708 /* ViewController.swift in Sources */,
+				D2A6D954241D12C200B33708 /* AppDelegate.swift in Sources */,
+				D2E4C54F248271AD00EF6EC8 /* HeartData.swift in Sources */,
+				D2A6D956241D12C200B33708 /* SceneDelegate.swift in Sources */,
+				D2E4C54724823B7100EF6EC8 /* CommonFunction.swift in Sources */,
+				D2F3A50C247ECEB300CDADA4 /* HeartKitAuthorization.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D962241D12C500B33708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D96B241D12C500B33708 /* Heart_Rate_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D96D241D12C500B33708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D976241D12C500B33708 /* Heart_Rate_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A6D985241D12C500B33708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A6D993241D12C500B33708 /* NotificationController.swift in Sources */,
+				D2A6D991241D12C500B33708 /* ExtensionDelegate.swift in Sources */,
+				D2F3A50D247ECEB300CDADA4 /* HeartKitAuthorization.swift in Sources */,
+				D2E4C550248271AD00EF6EC8 /* HeartData.swift in Sources */,
+				D2A6D98F241D12C500B33708 /* InterfaceController.swift in Sources */,
+				D2E4C54824823B7100EF6EC8 /* CommonFunction.swift in Sources */,
+				D21CB5AB247C2DA10085FBE5 /* AverageWalkingRate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2A6D968241D12C500B33708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6D94F241D12C200B33708 /* Heart Rate Monitor */;
+			targetProxy = D2A6D967241D12C500B33708 /* PBXContainerItemProxy */;
+		};
+		D2A6D973241D12C500B33708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6D94F241D12C200B33708 /* Heart Rate Monitor */;
+			targetProxy = D2A6D972241D12C500B33708 /* PBXContainerItemProxy */;
+		};
+		D2A6D97D241D12C500B33708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6D979241D12C500B33708 /* Heart Rate Monitor WatchKit App */;
+			targetProxy = D2A6D97C241D12C500B33708 /* PBXContainerItemProxy */;
+		};
+		D2A6D98C241D12C500B33708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2A6D988241D12C500B33708 /* Heart Rate Monitor WatchKit Extension */;
+			targetProxy = D2A6D98B241D12C500B33708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2A6D959241D12C200B33708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A6D95A241D12C200B33708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2A6D95E241D12C400B33708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A6D95F241D12C400B33708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2A6D998241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2A6D999241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A6D99B241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart Rate Monitor WatchKit Extension/Heart Rate Monitor WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate Monitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor.watchkit.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D2A6D99C241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Heart Rate Monitor WatchKit Extension/Heart Rate Monitor WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate Monitor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor.watchkit.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D2A6D99F241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				IBSC_MODULE = Heart_Rate_Monitor_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Rate Monitor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D2A6D9A0241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				IBSC_MODULE = Heart_Rate_Monitor_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Rate Monitor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D2A6D9A3241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Heart Rate Monitor/Heart Rate Monitor.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D2A6D9A4241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Heart Rate Monitor/Heart Rate Monitor.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanetteam.HeartRateMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D2A6D9A6241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanetteam.HeartRateMonitor.Heart-Rate-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Rate Monitor.app/Heart Rate Monitor";
+			};
+			name = Debug;
+		};
+		D2A6D9A7241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanetteam.HeartRateMonitor.Heart-Rate-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heart Rate Monitor.app/Heart Rate Monitor";
+			};
+			name = Release;
+		};
+		D2A6D9A9241D12C600B33708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanetteam.HeartRateMonitor.Heart-Rate-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heart Rate Monitor";
+			};
+			name = Debug;
+		};
+		D2A6D9AA241D12C600B33708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y55EBSG532;
+				INFOPLIST_FILE = "Heart Rate MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanetteam.HeartRateMonitor.Heart-Rate-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heart Rate Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A6D94B241D12C200B33708 /* Build configuration list for PBXProject "Heart Rate Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D998241D12C600B33708 /* Debug */,
+				D2A6D999241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6D99A241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D99B241D12C600B33708 /* Debug */,
+				D2A6D99C241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6D99E241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D99F241D12C600B33708 /* Debug */,
+				D2A6D9A0241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6D9A2241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D9A3241D12C600B33708 /* Debug */,
+				D2A6D9A4241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6D9A5241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D9A6241D12C600B33708 /* Debug */,
+				D2A6D9A7241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A6D9A8241D12C600B33708 /* Build configuration list for PBXNativeTarget "Heart Rate MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A6D9A9241D12C600B33708 /* Debug */,
+				D2A6D9AA241D12C600B33708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2A6D948241D12C200B33708 /* Project object */;
+}
